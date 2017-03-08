@@ -1,0 +1,33 @@
+#employees {
+    font-size: 12px;
+}
+
+.btn-delete-all-group {
+    position: fixed;
+    z-index: 500;
+    top: 10px;
+}
+
+.btn-delete-all {
+    cursor: pointer;
+}
+
+.table-container {
+    margin-top: 50px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.remove-button {
+    background-color: #d9534f;
+    color: white;
+}
+
+.search-form {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 500;
+}

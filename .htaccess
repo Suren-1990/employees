@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteBase /
+<Files .*>
+	Order Deny,Allow
+	Deny From All
+</Files>
+RewriteRule ^(?:app)\b.* index.php/$0 [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php/$0 [PT]
+php_flag display_errors on
+php_value error_reporting 6143
